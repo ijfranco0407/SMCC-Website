@@ -60,10 +60,9 @@ nav a:hover{
     .item1{grid-area: 1/ span 3 / 2/ 4;}
     .item2{grid-area: 4/ span 10 / 3 / 6;}
   }
-  .navbar {
-    background-color: rgb(12, 12, 63);
-    
-  }
   .navbar a:hover{
     background: gold;
+  }
+  main {
+    scroll-behavior: smooth;
   }
