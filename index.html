@@ -4,55 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMCC Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<style>
-    body{
-        margin: 0;
-        padding: 0;
-        background: image();
-        font-family: Arial, Helvetica, sans-serif;
-    }
-     nav ul{
-        list-style: none;
-        background: rgb(12, 12, 63);
-        padding: 0;
-        margin: 5px 20px;
-        text-align: center;
-        display: flex;
-        
-    }
-    nav{
-        display: inline-block;
-    }
-    nav a{
-        text-decoration: none;
-        color: #fff;
-        width: 100px;
-        display: block;
-        padding: 25px 40px;
-        font-size: 15px;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-        }
-        nav a:hover{
-            background: gold;
-        }
-</style>
 <body>
-    <Header style="text-align: center;"><br> <br>
-        <img src="smcclogo.png" alt="" height="150">
-        <h1 style="text-align: center;"> Saint Michael College of Caraga </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About SMCC</a></li>
-                <li><a href="#courses">Courses offered</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#index.html"><img src="smcclogo.png" alt="smccLOGO" height="105"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about">About SMCC</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses Offered
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#cas">CAS</a></li>
+                  <li><a class="dropdown-item" href="#cbm">CBM</a></li>
+                  <li><a class="dropdown-item" href="#ccis">CCIS</a></li>
+                  <li><a class="dropdown-item" href="#ccje">CCJE</a></li>
+                  <li><a class="dropdown-item" href="#cte">CTE</a></li>
+                  <li><a class="dropdown-item" href="#cthm">CTHM</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+                  </li>
+              </li>
             </ul>
-        </nav>
-    </Header>
+          </div>
+        </div>
+      </nav>
+    <!-- <header class="container">
+        <div class="item1">
+            <div class="box">
+                <div><img src="smcclogo.png" alt="smccLOGO" height="106"> Saint Michael College of Caraga</div>
+            </div>
+        </div>
+
+        <div class="item2">
+            <nav class="box">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About SMCC</a></li>
+                    <li><a href="#courses">Courses offered</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+</header> -->
     <main>
         <hr>
 <article id="about">
@@ -168,7 +182,7 @@
 <hr>
 <article id="courses">
 <h2 style="text-align: center;"> COURSES OFFERED</h2>
-    <section>
+    <section id="cas">
         <h3 style="text-align: center;">CAS</h3>
         <figure style="text-align: center;">
             <img src="cas.png" alt="" height="200">
@@ -180,7 +194,7 @@
             </table>
         </figure>
     </section>
-    <section>
+    <section id="cbm">
         <h3 style="text-align: center;">CBM</h3>
         <figure style="text-align: center;">
             <img src="cbm.png" alt="" height="200">
@@ -207,7 +221,7 @@
             </table>
         </figure>
     </section>
-    <section>
+    <section id="ccis">
         <h3 style="text-align: center;">CCIS</h3>
         <FIGURE style="text-align: center;">
             <img src="ccis.png" alt="" height="200">
@@ -231,7 +245,7 @@
         </table>
     </FIGURE>
     </section>
-    <section>
+    <section id="ccje">
         <h3 style="text-align: center;">CCJE</h3>
         <figure style="text-align: center;">
             <img src="ccje.png" alt="" height="200">
@@ -246,7 +260,7 @@
             </table>
         </figure>
     </section>
-    <section>
+    <section id="cte">
         <h3 style="text-align: center;">CTE</h3>
         <figure style="text-align: center;">
             <img src="cte.png" alt="" height="200">
@@ -281,7 +295,7 @@
             </table>
         </figure>
     </section>
-    <section style="text-align: center;">
+    <section id="cthm" style="text-align: center;">
         <h3 style="text-align: center;">CTHM</h3>
         <figure style="text-align: center;">
             <img src="cthm.png" alt="" height="200">
