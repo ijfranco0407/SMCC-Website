@@ -73,6 +73,7 @@ nav a:hover{
     grid-auto-flow: column;
     gap: 10px;
     padding: 10px;
+    margin: auto;
   }
   .itemA {
     background-color: gold;
@@ -82,7 +83,7 @@ nav a:hover{
     grid-row: 1;
     width: 600px;
     height: 900px;
-  
+    margin: auto;
   }
   .itemB {
     background-color: gold;
@@ -139,3 +140,71 @@ nav a:hover{
     display: flex;
     margin: auto;
   }
+
+  .courses {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  } 
+
+.co1{
+  background-color: gold;
+    border-radius: 40px;
+    margin: 10px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+.co2{
+  background-color: gold;
+    border-radius: 40px;
+    margin: 10px;
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    width: 300px;
+    height: 650px;
+    margin: auto;
+}
+.co3{
+  background-color: gold;
+    border-radius: 40px;
+    margin: 10px;
+    grid-column: 3 / span 4;
+    grid-row: 1;
+    width: 300px;
+    height: 550px;
+    margin: auto;
+}
+.co4{
+  background-color: gold;
+    border-radius: 40px;
+    margin: 10px;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+.co5{
+  background-color: gold;
+    border-radius: 40px;
+    margin: 10px;
+    grid-column: 1;
+    grid-row: 1;
+    width: 300px;
+    height: 750px;
+    margin: auto;
+}
+.co6{
+  background-color: gold;
+    border-radius: 40px;
+    margin: 10px;
+    grid-column: 1;
+    grid-row: 1;
+    width: 300px;
+    height: 550px;
+    margin: auto;
+}
