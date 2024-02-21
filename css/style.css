@@ -57,12 +57,85 @@ nav a:hover{
     grid-row: auto;
   }
   @media only screen and (max-width: 500px){
-    .item1{grid-area: 1/ span 3 / 2/ 4;}
-    .item2{grid-area: 4/ span 10 / 3 / 6;}
+  .navbar
   }
   .navbar a:hover{
-    background: gold;
+    background: rgb(12, 12, 63);
   }
   main {
     scroll-behavior: smooth;
+  }
+  .bod {
+    opacity: 0.9;
+  }
+  .about {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .itemA {
+    background-color: gold;
+    border-radius: 40px;
+    margin: 10px;
+    grid-column: 1/ span 2;
+    grid-row: 1;
+    width: 600px;
+    height: 900px;
+  
+  }
+  .itemB {
+    background-color: gold;
+    border-radius: 40px;
+    margin: 10px;
+    grid-column: 1/ span 2;
+    grid-row: 2;
+    height: 900px;
+  }
+  .itemC {
+    background-color: gold;
+    border-radius: 40px;
+    margin: 10px;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  .itemD {
+    background-color: gold;
+    border-radius: 40px;
+    margin: 10px;
+    grid-column: 3;
+    grid-row: 1/ span 3;
+  }
+  .meaning {
+    border: 2px solid;
+  }
+  
+  h2 {
+    color: aliceblue;
+    border-style: solid;
+    border-radius: 40px;
+    background-color: rgb(12, 12, 63);
+  }
+  footer{
+    background-color: gold;
+  }
+  .footer{
+    color: aliceblue;
+    border-style: solid;
+    border-radius: 40px;
+    background-color: rgb(12, 12, 63);
+    width:  50%;
+    margin: auto;
+  }
+  .top{
+    color: aliceblue;
+    border-style: solid;
+    border-radius: 40px;
+    background-color: rgb(12, 12, 63);
+    width:  100%;
+    margin: auto;
+  }
+  img {
+    display: flex;
+    margin: auto;
   }
