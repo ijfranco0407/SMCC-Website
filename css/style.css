@@ -1,58 +1,32 @@
-/* body{
-    margin: 0;
-    padding: 0;
-    background: image();
-    font-family: Arial, Helvetica, sans-serif;
+.navbar {
+  border-bottom: 5px solid rgb(12, 12, 63);
 }
- nav ul{
-    list-style: none;
-    background: rgb(12, 12, 63);
-    padding: 0;
-    margin: 5px 20px;
-    text-align: center;
-    display: flex;
-    
+.box {
+  overflow: hidden;
 }
-nav{
-    display: inline-block;
+    
+.box {
+  transition: all 0.7s ease;
 }
-nav a{
-    text-decoration: none;
-    color: #fff;
-    width: 100px;
-    display: block;
-    padding: 25px 40px;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    }
-nav a:hover{
-        background: gold;
-    } */
-    .box {
-      overflow: hidden;
-    }
     
-    .box {
-      transition: all 0.7s ease;
-    }
-    
-    .box:hover {
-      transform: scale(1.1);
-    }
+.box:hover {
+  transform: scale(1.1);
+}
+
 .box {
   background-color: rgb(12, 12, 63);
   border-radius: 20px;
   margin: 10px;
   grid-column: 1 / span 2;
   grid-row: 1;
-  width: 300px;
+  width: auto;
   height: auto;
   margin: auto;
   border-bottom: 5px solid gold;
   color: aliceblue;
 }
+
+
 .container{
     display: grid;
     grid-auto-flow: column;
@@ -83,38 +57,6 @@ nav a:hover{
     padding: 10px;
     margin: auto;
   }
-  .itemA {
-    background-color: gold;
-    border-radius: 40px;
-    margin: 10px;
-    grid-column: 1/ span 2;
-    grid-row: 1;
-    width: 600px;
-    height: 900px;
-    margin: auto;
-  }
-  .itemB {
-    background-color: gold;
-    border-radius: 40px;
-    margin: 10px;
-    grid-column: 1/ span 2;
-    grid-row: 2;
-    height: 900px;
-  }
-  .itemC {
-    background-color: gold;
-    border-radius: 40px;
-    margin: 10px;
-    grid-column: 1 / span 2;
-    grid-row: 3;
-  }
-  .itemD {
-    background-color: gold;
-    border-radius: 40px;
-    margin: 10px;
-    grid-column: 3;
-    grid-row: 1/ span 3;
-  }
   .meaning {
     border: 2px solid;
   }
@@ -124,6 +66,8 @@ nav a:hover{
     border-style: solid;
     border-radius: 40px;
     background-color: rgb(12, 12, 63);
+    width: 60%;
+    margin: auto;
   }
   h3 {
     color: black;
@@ -145,9 +89,10 @@ nav a:hover{
     background-color: gold;
   }
   .footer{
+    position: relative;
     color: aliceblue;
     border-style: solid;
-    border-radius: 40px;
+    border-radius: 50px;
     background-color: rgb(12, 12, 63);
     width:  50%;
     margin: auto;
@@ -155,7 +100,7 @@ nav a:hover{
   .top{
     color: aliceblue;
     border-style: solid;
-    border-radius: 40px;
+    border-radius: 100px;
     background-color: rgb(12, 12, 63);
     width:  100%;
     margin: auto;
@@ -176,73 +121,6 @@ nav a:hover{
   figcaption{
     border: solid yellow;
   }
-
-.co1{
-  background-color: rgb(12, 12, 63);
-    border-radius: 40px;
-    margin: 10px;
-    grid-column: 1 / span 2;
-    grid-row: 1;
-    width: 300px;
-    height: 400px;
-    margin: auto;
-    border-bottom: 5px solid gold;
-}
-.co2{
-  background-color: rgb(12, 12, 63);
-    border-radius: 40px;
-    margin: 10px;
-    grid-column: 2 / span 3;
-    grid-row: 1;
-    width: 300px;
-    height: 800px;
-    margin: auto;
-    border-bottom: 5px solid gold;
-}
-.co3{
-  background-color: rgb(12, 12, 63);
-    border-radius: 40px;
-    margin: 10px;
-    grid-column: 3 / span 4;
-    grid-row: 1;
-    width: 300px;
-    height: 700px;
-    margin: auto;
-    border-bottom: 5px solid gold;
-}
-.co4{
-  background-color: rgb(12, 12, 63);
-    border-radius: 40px;
-    margin: 10px;
-    grid-column: 1 / span 2;
-    grid-row: 2;
-    width: 300px;
-    height: 500px;
-    margin: auto;
-    border-bottom: 5px solid gold;
-}
-.co5{
-  background-color: rgb(12, 12, 63);
-    border-radius: 40px;
-    margin: 10px;
-    grid-column: 1;
-    grid-row: 1;
-    width: 300px;
-    height: 900px;
-    margin: auto;
-    border-bottom: 5px solid gold;
-}
-.co6{
-  background-color: rgb(12, 12, 63);
-    border-radius: 40px;
-    margin: 10px;
-    grid-column: 1;
-    grid-row: 1;
-    width: 300px;
-    height: 700px;
-    margin: auto;
-    border-bottom: 5px solid gold;
-}
 
 .services{
   display: grid;
