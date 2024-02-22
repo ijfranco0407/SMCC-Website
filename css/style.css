@@ -30,17 +30,28 @@ nav a{
 nav a:hover{
         background: gold;
     } */
-
+    .box {
+      overflow: hidden;
+    }
+    
+    .box {
+      transition: all 0.7s ease;
+    }
+    
+    .box:hover {
+      transform: scale(1.1);
+    }
 .box {
-    display: grid;
-    grid-area: auto;
-    color: aliceblue;
-    background-color: rgb(12, 12, 63);
-    border-bottom: 5px solid gold; 
-    min-height: 50px;
-    font-size: 1rem;
-    font-weight: bold;
-    grid-template-columns: auto auto auto auto auto auto auto;
+  background-color: rgb(12, 12, 63);
+  border-radius: 20px;
+  margin: 10px;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  width: 300px;
+  height: auto;
+  margin: auto;
+  border-bottom: 5px solid gold;
+  color: aliceblue;
 }
 .container{
     display: grid;
@@ -55,9 +66,6 @@ nav a:hover{
 .item2 {
     grid-column: 4/ span 7 ;
     grid-row: auto;
-  }
-  @media only screen and (max-width: 500px){
-  .navbar
   }
   .navbar a:hover{
     background: rgb(12, 12, 63);
@@ -117,6 +125,22 @@ nav a:hover{
     border-radius: 40px;
     background-color: rgb(12, 12, 63);
   }
+  h3 {
+    color: black;
+    border-style: solid;
+    border-radius: 40px;
+    background-color: gold;
+    width: 50%;
+    margin: auto;
+  }
+  h4 {
+    color: black;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: gold;
+    width: 70%;
+    margin: auto;
+  }
   footer{
     background-color: gold;
   }
@@ -146,10 +170,15 @@ nav a:hover{
     grid-template-columns: auto auto auto;
     gap: 10px;
     padding: 10px;
+    color: aliceblue;
+    margin: auto;
   } 
+  figcaption{
+    border: solid yellow;
+  }
 
 .co1{
-  background-color: gold;
+  background-color: rgb(12, 12, 63);
     border-radius: 40px;
     margin: 10px;
     grid-column: 1 / span 2;
@@ -157,54 +186,78 @@ nav a:hover{
     width: 300px;
     height: 400px;
     margin: auto;
+    border-bottom: 5px solid gold;
 }
 .co2{
-  background-color: gold;
+  background-color: rgb(12, 12, 63);
     border-radius: 40px;
     margin: 10px;
     grid-column: 2 / span 3;
     grid-row: 1;
     width: 300px;
-    height: 650px;
+    height: 800px;
     margin: auto;
+    border-bottom: 5px solid gold;
 }
 .co3{
-  background-color: gold;
+  background-color: rgb(12, 12, 63);
     border-radius: 40px;
     margin: 10px;
     grid-column: 3 / span 4;
     grid-row: 1;
     width: 300px;
-    height: 550px;
+    height: 700px;
     margin: auto;
+    border-bottom: 5px solid gold;
 }
 .co4{
-  background-color: gold;
+  background-color: rgb(12, 12, 63);
     border-radius: 40px;
     margin: 10px;
     grid-column: 1 / span 2;
     grid-row: 2;
     width: 300px;
-    height: 400px;
+    height: 500px;
     margin: auto;
+    border-bottom: 5px solid gold;
 }
 .co5{
-  background-color: gold;
+  background-color: rgb(12, 12, 63);
     border-radius: 40px;
     margin: 10px;
     grid-column: 1;
     grid-row: 1;
     width: 300px;
-    height: 750px;
+    height: 900px;
     margin: auto;
+    border-bottom: 5px solid gold;
 }
 .co6{
-  background-color: gold;
+  background-color: rgb(12, 12, 63);
     border-radius: 40px;
     margin: 10px;
     grid-column: 1;
     grid-row: 1;
     width: 300px;
-    height: 550px;
+    height: 700px;
     margin: auto;
+    border-bottom: 5px solid gold;
+}
+
+.services{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  padding: 10px;
+  color: rgb(231, 234, 238);
+  margin: auto;
+}
+.admission{
+  background-color: rgb(12, 12, 63);
+    border-radius: 10px;
+    margin: 10px;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 10px;
+    border-bottom: 5px solid gold;
 }
