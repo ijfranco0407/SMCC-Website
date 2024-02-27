@@ -3,6 +3,11 @@
   border-top: 10px solid rgb(12, 12, 63);
   margin: auto;
 }
+.nav-link {
+  font-size: x-large;
+  font-weight: bold;
+  color: #000;
+}
 .box {
   overflow: hidden;
 }
@@ -28,7 +33,11 @@
   padding: 10px;
 }
 
-
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+	background-size: cover;
+}
 .container{
     display: grid;
     grid-auto-flow: column;
@@ -45,6 +54,7 @@
   }
   .navbar a:hover{
     background: rgb(12, 12, 63);
+    
   }
   main {
     scroll-behavior: smooth;
@@ -74,7 +84,7 @@
   h3 {
     color: black;
     border-style: solid;
-    border-radius: 40px;
+    border-radius: 10px;
     background-color: gold;
     width: 50%;
     margin: auto;
@@ -140,4 +150,8 @@
     grid-row: 1;
     margin: 10px;
     border-bottom: 5px solid gold;
+}
+html {
+  border: 10px;
+  position: relative;
 }
